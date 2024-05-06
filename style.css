@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./Imagenes/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+i {
+  position: absolute;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+  top: -10px;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: calc(100vh + 50px);
+  }
+}
