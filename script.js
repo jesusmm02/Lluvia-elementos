@@ -12,7 +12,7 @@ function createFallingElement() {
   let delay = Math.random() * 5;
   element.style.animationDelay = delay + "s";
   
-  let anima = (Math.random() * 10) + 5;
+  let anima = (Math.random() * 3) + 5;
   element.style.animationDuration = anima + "s";
   
   body.appendChild(element);
